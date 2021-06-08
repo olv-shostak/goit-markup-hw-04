@@ -110,7 +110,7 @@ header .container {
 }
 
 .contact-list .link {
-  display: block;
+  display: inline-block;
   padding-bottom: 32px;
   padding-top: 31px;
   color: var(--primary-text-color);
@@ -123,6 +123,21 @@ header .container {
 .contact-list .link:hover,
 .contact-list .link:focus {
   color: var(--accent-color);
+  fill: #2196f3;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* MAIN */
@@ -190,7 +205,6 @@ header .container {
 
 .features-list li {
   width: 270px;
-  height: 101px;
 }
 
 .features-list :not(:last-child) {
@@ -211,6 +225,22 @@ header .container {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.icon-background {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-image {
+  width: 70px;
+  height: 70px;
 }
 
 /* Doing */
@@ -286,7 +316,114 @@ header .container {
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+
+.sl-list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
+  fill: #afb1b8;
+}
+
+.sl-list :not(:last-child) {
+  margin-right: 10px;
+}
+
+.sl-logo {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+}
+
+.sl-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.sl-link:hover,
+.sl-link:focus {
+  background-color: var(--accent-color);
+  fill: #fff;
+}
+
+/* Clients */
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  fill: #afb1b8;
+}
+
+.clients-list :not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company {
+  fill: inherit;
+}
+
+.logo1 {
+  width: 41px;
+  height: 46.7px;
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo3 {
+  width: 43.46px;
+  height: 41.18px;
+}
+
+.logo4 {
+  width: 84.44px;
+  height: 40.62px;
+}
+
+.logo5 {
+  width: 62.54px;
+  height: 45.43px;
+}
+
+.logo6 {
+  width: 93.79px;
+  height: 43.93px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* FOOTER */
@@ -328,6 +465,55 @@ header .container {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.143;
+  text-transform: uppercase;
+  color: var(--dark-background-text);
+}
+
+.join-list {
+  display: flex;
+  fill: #fff;
+  margin-top: 20px;
+}
+
+.join-list :not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* PORTFOLIO */
@@ -414,4 +600,10 @@ header .container {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.card-set > .item:hover,
+.card-set > .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
